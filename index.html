@@ -7,211 +7,205 @@
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
 <body>
-    <header>
-        <div class = "header_top">
-            <img class = "lcon_header" src="assets/icons/Search.png">
+    <header class="header">
+        <div class="header__top">
+            <img class="header__icon" src="assets/icons/Search.png" alt="Search">
 
-            <img src="assets/images/Лого.png">
+            <img class="header__logo" src="assets/images/Лого.png" alt="Avion Logo">
 
-            <div class = "pr_ic">
-                <img class = "lcon_header" src="assets/icons/Shopping--cart.png">
-                <img class = "lcon_header" src="assets/icons/User--avatar.png">
+            <div class="header__actions">
+                <img class="header__icon" src="assets/icons/Shopping--cart.png" alt="Cart">
+                <img class="header__icon" src="assets/icons/User--avatar.png" alt="User">
             </div>
         </div>
-        <div class="line"></div>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#plants">Plant pots</a></li>
-                <li><a href="#ceramics">Ceramics</a></li>
-                <li><a href="#tables">Tables</a></li>
-                <li><a href="#chairs">Chairs</a></li>
-                <li><a href="#crockery">Crockery</a></li>
-                <li><a href="#tableware">Tableware</a></li>
-                <li><a href="#cutlery">Cutlery</a></li>
+        <div class="header__divider"></div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#ceramics">Plant pots</a></li>
+                <li class="nav__item"><a class="nav__link" href="#ceramics">Ceramics</a></li>
+                <li class="nav__item"><a class="nav__link" href="#popular">Tables</a></li>
+                <li class="nav__item"><a class="nav__link" href="#popular">Chairs</a></li>
+                <li class="nav__item"><a class="nav__link" href="#ceramics">Crockery</a></li>
+                <li class="nav__item"><a class="nav__link" href="#features">Tableware</a></li>
+                <li class="nav__item"><a class="nav__link" href="#story">Cutlery</a></li>
             </ul>
         </nav>
     </header>
 
-
-
     <section class="hero">
-        <div class="hero-content">
+        <div class="hero__content">
             <div>
-                <h1>The furniture brand for the future, with timeless designs</h1>
+                <h1 class="hero__title">The furniture brand for the future, with timeless designs</h1>
                 <button class="btn">View collection</button>
             </div>
-            <p>A new era is upon us. Behold furniture with Avion, the French luxury retail brand with nice fonts, tasteful colors and a beautiful way to display things digitally using modern web technologies.</p>
+            <p class="hero__description">A new era is upon us. Behold furniture with Avion, the French luxury retail brand with nice fonts, tasteful colors and a beautiful way to display things digitally using modern web technologies.</p>
         </div>
         
-        <div class="hero-image">
+        <div class="hero__image">
             <img src="assets/images/Right Image.png" alt="Dandy chair">
         </div>
     </section>
 
-
-    
-    <section class="features">
-        <h2>What makes our brand different</h2>
-        <div class="features-grid">
-            <div class="feature-item">
-                <img src="assets/icons/Delivery.png" class="feature-icon">
-                <h3>Next day as standard</h3>
-                <p>Order before 3pm and get your order the next day as standard</p>
+    <section class="features" id="features">
+        <h2 class="features__title">What makes our brand different</h2>
+        <div class="features__grid">
+            <div class="features__item">
+                <img src="assets/icons/Delivery.png" class="features__icon" alt="Delivery">
+                <h3 class="features__item-title">Next day as standard</h3>
+                <p class="features__item-description">Order before 3pm and get your order the next day as standard</p>
             </div>
-            <div class="feature-item">
-                <img src = "assets/icons/Checkmark--outline.png" class="feature-icon">
-                <h3>Made by true artisans</h3>
-                <p>Handmade crafted goods made with real passion and craftmanship</p>
+            <div class="features__item">
+                <img src="assets/icons/Checkmark--outline.png" class="features__icon" alt="Checkmark">
+                <h3 class="features__item-title">Made by true artisans</h3>
+                <p class="features__item-description">Handmade crafted goods made with real passion and craftmanship</p>
             </div>
-            <div class="feature-item">
-                <img src = "assets/icons/Purchase.png" class="feature-icon">
-                <h3>Unbeatable prices</h3>
-                <p>For our materials and quality you won't find better prices anywhere</p>
+            <div class="features__item">
+                <img src="assets/icons/Purchase.png" class="features__icon" alt="Purchase">
+                <h3 class="features__item-title">Unbeatable prices</h3>
+                <p class="features__item-description">For our materials and quality you won't find better prices anywhere</p>
             </div>
-            <div class="feature-item">
-                <img src = "assets/icons/Sprout.png" class="feature-icon">
-                <h3>Recycled packaging</h3>
-                <p>We use 100% recycled packaging to ensure our footprint is manageable</p>
+            <div class="features__item">
+                <img src="assets/icons/Sprout.png" class="features__icon" alt="Sprout">
+                <h3 class="features__item-title">Recycled packaging</h3>
+                <p class="features__item-description">We use 100% recycled packaging to ensure our footprint is manageable</p>
             </div>
         </div>
     </section>
 
-    <section class="products-section">
-        <h2>New ceramics</h2>
-        <div class="products-grid">
+    <section class="products" id="ceramics">
+        <h2 class="products__title">New ceramics</h2>
+        <div class="products__grid">
             <div class="product-card">
-                <img src="assets/images/Photo.png" alt="The Dandy chair">
-                <h3>The Dandy chair</h3>
-                <p>£250</p>
+                <img class="product-card__image" src="assets/images/Photo.png" alt="The Dandy chair">
+                <h3 class="product-card__title">The Dandy chair</h3>
+                <p class="product-card__price">£250</p>
             </div>
             <div class="product-card">
-                <img src="assets/images/image_vase.png" alt="Rustic Vase Set">
-                <h3>Rustic Vase Set</h3>
-                <p>£155</p>
+                <img class="product-card__image" src="assets/images/image_vase.png" alt="Rustic Vase Set">
+                <h3 class="product-card__title">Rustic Vase Set</h3>
+                <p class="product-card__price">£155</p>
             </div>
             <div class="product-card">
-                <img src="assets/images/Photo (1).png" alt="The Silky Vase">
-                <h3>The Silky Vase</h3>
-                <p>£125</p>
+                <img class="product-card__image" src="assets/images/Photo (1).png" alt="The Silky Vase">
+                <h3 class="product-card__title">The Silky Vase</h3>
+                <p class="product-card__price">£125</p>
             </div>
             <div class="product-card">
-                <img src="assets/images/Photo (2).png"  alt="The Lucy Lamp">
-                <h3>The Lucy Lamp</h3>
-                <p>£399</p>
+                <img class="product-card__image" src="assets/images/Photo (2).png"  alt="The Lucy Lamp">
+                <h3 class="product-card__title">The Lucy Lamp</h3>
+                <p class="product-card__price">£399</p>
             </div>
         </div>
-        <div class="view-collection">
-            <button>View collection</button>
+        <div class="products__footer">
+            <button class="btn btn--secondary">View collection</button>
         </div>
     </section>
 
-    <section class="popular-products">
-        <h2>Our popular products</h2>
-        <div class="popular-grid">
+    <section class="products products--popular" id="popular">
+        <h2 class="products__title">Our popular products</h2>
+        <div class="products__grid products__grid--popular">
             <div class="product-card">
-                <img src="assets/images/Large.png" alt="The Poplar suede sofa">
-                <h3>The Poplar suede sofa</h3>
-                <p>£980</p>
+                <img class="product-card__image" src="assets/images/Large.png" alt="The Poplar suede sofa">
+                <h3 class="product-card__title">The Poplar suede sofa</h3>
+                <p class="product-card__price">£980</p>
             </div>
             <div class="product-card">
-                <img src="assets/images/Photo.png" alt="The Dandy chair">
-                <h3>The Dandy chair</h3>
-                <p>£250</p>
+                <img class="product-card__image" src="assets/images/Photo.png" alt="The Dandy chair">
+                <h3 class="product-card__title">The Dandy chair</h3>
+                <p class="product-card__price">£250</p>
             </div>
             <div class="product-card">
-                <img src="assets/images/Photo (3).png" alt="The Dandy chair">
-                <h3>The Dandy chair</h3>
-                <p>£250</p>
+                <img class="product-card__image" src="assets/images/Photo (3).png" alt="The Dandy chair">
+                <h3 class="product-card__title">The Dandy chair</h3>
+                <p class="product-card__price">£250</p>
             </div>
         </div>
-        <div class="view-collection">
-            <button>View collection</button>
+        <div class="products__footer">
+            <button class="btn btn--secondary">View collection</button>
         </div>
     </section>
 
     <section class="newsletter">
-        <div class="inside_newsletter">
-            <h2>Join the club and get the benefits</h2>
-            <p>Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="your@email.com" >
-                <button type="submit">Sign up</button>
+        <div class="newsletter__content">
+            <h2 class="newsletter__title">Join the club and get the benefits</h2>
+            <p class="newsletter__description">Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
+            <form class="newsletter__form">
+                <input class="newsletter__input" type="email" placeholder="your@email.com" >
+                <button class="newsletter__btn" type="submit">Sign up</button>
             </form>
         </div>
     </section>
 
-    <section class="brand-story">
-        <div class="story-content">
-            <h2>From a studio in London to a global brand with over 400 outlets</h2>
-            <p>When we started Avion, the idea was simple. Make high quality furniture affordable and available for the mass market.</p>
-            <p>Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique become the hotbed for the London interior design community.</p>
-            <button>Get in touch</button>
+    <section class="brand-story" id="story">
+        <div class="brand-story__content">
+            <h2 class="brand-story__title">From a studio in London to a global brand with over 400 outlets</h2>
+            <p class="brand-story__text">When we started Avion, the idea was simple. Make high quality furniture affordable and available for the mass market.</p>
+            <p class="brand-story__text">Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique become the hotbed for the London interior design community.</p>
+            <button class="btn btn--secondary brand-story__btn">Get in touch</button>
         </div>
-        <div class="story-image">
+        <div class="brand-story__image">
             <img src="assets/images/Image.png" alt="Brand story">
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class = "menu">
-                <div class="footer-section">
-                    <h3>Menu</h3>
-                    <ul>
-                        <li><a href="#">New arrivals</a></li>
-                        <li><a href="#">Best sellers</a></li>
-                        <li><a href="#">Recently viewed</a></li>
-                        <li><a href="#">Popular this week</a></li>
-                        <li><a href="#">All products</a></li>
+    <footer class="footer" id="contact">
+        <div class="footer__content">
+            <div class="footer__menu">
+                <div class="footer__section">
+                    <h3 class="footer__title">Menu</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">New arrivals</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Best sellers</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Recently viewed</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Popular this week</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">All products</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Categories</h3>
-                    <ul>
-                        <li><a href="#">Crockery</a></li>
-                        <li><a href="#">Furniture</a></li>
-                        <li><a href="#">Homeware</a></li>
-                        <li><a href="#">Plant pots</a></li>
-                        <li><a href="#">Chairs</a></li>
-                        <li><a href="#">Crockery</a></li>
+                <div class="footer__section">
+                    <h3 class="footer__title">Categories</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">Crockery</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Furniture</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Homeware</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Plant pots</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Chairs</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Crockery</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Our company</h3>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Vacancies</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Returns policy</a></li>
+                <div class="footer__section">
+                    <h3 class="footer__title">Our company</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">About us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Vacancies</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Contact us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Privacy</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Returns policy</a></li>
                     </ul>
                 </div>
             </div>
  
 
-            <div>
-                <div class="form-wrapper footer-newsletter">
-                <h3>Join our mailing list</h3>
-                <div class = "inpyt_form-wrapper">
-                   <input type="email" placeholder="your@email.com">
-                   <button>Sign up</button> 
-                </div>
-            </div>
+            <div class="footer__newsletter">
+                <h3 class="footer__title">Join our mailing list</h3>
+                <form class="footer__form">
+                   <input class="footer__input" type="email" placeholder="your@email.com">
+                   <button class="footer__btn">Sign up</button> 
+                </form>
             </div>
             
             
         </div>
-        <div class="footer-bottom">
-            <p>Copyright 2022 Avion LTD</p>
-            <div class="social-links">
-                <img src="assets/icons/sociallinkedin_member_70.png" >
-                <img src="assets/icons/facebook_internet_media_network_social_icon_123257.png" >
-                <img src="assets/icons/instagram_icon_138461.png" >
-                <img src="assets/icons/skype_icon-icons.com_50749.png" >
-                <img src="assets/icons/TWITTER_icon-icons.com_62686.png" >
-                <img src="assets/icons/Pinterest_Rounded_Solid_icon-icons.com_61557.png" >
+        <div class="footer__bottom">
+            <p class="footer__copyright">Copyright 2022 Avion LTD</p>
+            <div class="footer__socials">
+                <img class="footer__social-icon" src="assets/icons/sociallinkedin_member_70.png" alt="LinkedIn">
+                <img class="footer__social-icon" src="assets/icons/facebook_internet_media_network_social_icon_123257.png" alt="Facebook">
+                <img class="footer__social-icon" src="assets/icons/instagram_icon_138461.png" alt="Instagram">
+                <img class="footer__social-icon" src="assets/icons/skype_icon-icons.com_50749.png" alt="Skype">
+                <img class="footer__social-icon" src="assets/icons/TWITTER_icon-icons.com_62686.png" alt="Twitter">
+                <img class="footer__social-icon" src="assets/icons/Pinterest_Rounded_Solid_icon-icons.com_61557.png" alt="Pinterest">
             </div>
         </div>
     </footer>
 </body>
-</html> 
+</html>
