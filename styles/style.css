@@ -709,3 +709,18 @@ body {
         font-size: 20px;
     }
 }
+
+/* Дополнительная адаптация для компактных телефонов (iPhone SE и аналоги) */
+@media (max-width: 399px) {
+    .header {
+        padding: 15px 15px; /* Чуть меньше отступы по бокам */
+    }
+
+    .hero__title {
+        font-size: 22px; /* Уменьшаем главный заголовок */
+    }
+
+    .features__title {
+        font-size: 18px;
+    }
+}
