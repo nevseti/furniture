@@ -25,6 +25,7 @@ img {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -549,57 +550,6 @@ body {
     opacity: 0.8;
 }
 
-/* Masonry Grid Styles */
-.masonry-grid {
-    padding: 40px 0;
-}
-
-.masonry-grid__title {
-    font-size: 24px;
-    color: #2A254B;
-    margin-bottom: 24px;
-    text-align: center;
-}
-
-.masonry-grid__container {
-    column-count: 3;
-    column-gap: 24px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.masonry-item {
-    display: inline-block;
-    width: 100%;
-    margin: 0 0 24px;
-    padding: 1.5rem;
-    background: #f8f9fa;
-    border-radius: 8px;
-    border: 1px solid #e9ecef;
-    transition: transform 0.3s ease;
-    break-inside: avoid;
-}
-
-.masonry-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.masonry-item__title {
-    margin-bottom: 10px;
-    color: #2A254B;
-}
-
-.masonry-item__text {
-    color: #505977;
-    line-height: 1.5;
-}
-
-/* =========================================
-   Media Queries (Responsive Adaptations)
-   ========================================= */
-
-/* Laptops (max-width: 1199px) */
 @media (max-width: 1199px) {
     body {
         margin: 0 40px;
@@ -621,7 +571,7 @@ body {
     }
 }
 
-/* Tablets (max-width: 991px) */
+
 @media (max-width: 991px) {
     .header__top {
         flex-wrap: wrap;
@@ -633,7 +583,7 @@ body {
     }
 
     .hero__image {
-        display: none; /* Hide image on smaller screens or stack it */
+        display: none; 
     }
 
     .features__grid {
@@ -653,21 +603,17 @@ body {
     }
     
     .brand-story__image {
-        height: 400px; /* Limit height when stacked */
-        order: -1; /* Image first? Or keep text first. Let's keep logical order */
+        height: 400px; 
+        order: -1; 
     }
 
     .footer__content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-
-    .masonry-grid__container {
-        column-count: 2;
-    }
 }
 
-/* Mobile Landscape (max-width: 767px) */
+
 @media (max-width: 767px) {
     body {
         margin: 0 20px;
@@ -703,7 +649,7 @@ body {
     }
 
     .products__grid, .products__grid--popular {
-        grid-template-columns: 1fr; /* Single column for products */
+        grid-template-columns: 1fr; 
     }
 
     .newsletter__form {
@@ -723,6 +669,19 @@ body {
         grid-template-columns: 1fr;
         margin-left: 0;
     }
+
+    .footer__form {
+        flex-direction: column;
+    }
+
+    .footer__input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer__btn {
+        width: 100%;
+    }
     
     .footer__bottom {
         flex-direction: column;
@@ -732,18 +691,14 @@ body {
     .masonry-grid__container {
         column-count: 1;
     }
-    
-    .brand-story__content {
-         padding: 40px;
-    }
 }
 
-/* Mobile Portrait (max-width: 575px) */
+
 @media (max-width: 575px) {
-    .header__actions {
-        display: none; /* Simplify header further or use burger menu (not implemented) */
+    .header__top {
+        margin-bottom: 20px;
     }
-    
+
     .hero__title {
         font-size: 24px;
     }
