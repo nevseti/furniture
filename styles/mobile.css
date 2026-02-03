@@ -1,19 +1,157 @@
-@media (max-width: 767px) {
+﻿@media (max-width: 1199px) {
+    body {
+        margin: 0 40px;
+    }
+
     .header {
+        margin: 15px -40px;
+        padding: 15px 40px;
+    }
+
+    .newsletter, 
+    .brand-story, 
+    .footer {
+        margin-left: -40px;
+        margin-right: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .hero {
+        aspect-ratio: auto;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .header__top {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        margin-bottom: 80px;
+    }
+
+    .hero__image {
+        display: none; 
+    }
+
+    .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .products__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .products__grid--popular {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brand-story {
+        grid-template-columns: 1fr;
+    }
+    
+    .brand-story__image {
+        height: 400px; 
+        order: -1; 
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        margin: 0 20px;
+        font-size: 16px; /* Material Design base */
+    }
+
+    .header {
+        margin: 0 -20px;
+        padding: 15px 20px;
         position: sticky;
         top: 0;
         z-index: 1000;
         background-color: white; 
     }
 
+    .newsletter, 
+    .brand-story, 
+    .footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .hero__content {
+        padding: 40px;
+    }
+    
+    .features__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products__grid, .products__grid--popular {
+        grid-template-columns: 1fr; 
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+    }
+
+    .newsletter__input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter__btn {
+        width: 100%;
+    }
+
+    .footer__menu {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    .footer__form {
+        flex-direction: column;
+    }
+
+    .footer__input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer__btn {
+        width: 100%;
+    }
+    
+    .footer__bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* BURGER MENU STYLES */
     .menu-toggle {
         display: flex; /* Показываем гамбургер на мобильных */
-        order: -1; /* Ставим перед логотипом, или 1 если после */
+        order: -1; /* Ставим перед логотипом */
     }
     
     .header__top {
         position: relative;
-        z-index: 1002; /* Чтобы кнопка была поверх оверлея */
+        z-index: 1002;
     }
 
     /* Основная навигация (скрыта по умолчанию) */
@@ -21,7 +159,7 @@
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%; /* Шторка не на весь экран */
+        width: 80%;
         max-width: 300px;
         height: 100vh;
         background: white;
@@ -31,16 +169,11 @@
         z-index: 1000;
         overflow-y: auto;
         margin-top: 0;
-        display: block; /* Перебиваем flex если был */
+        display: block;
     }
 
     .nav.active {
         right: 0;
-    }
-
-    .nav__list {
-        flex-direction: column;
-        gap: 0;
     }
 
     .nav__link {
@@ -67,11 +200,7 @@
     .nav-overlay.active {
         display: block;
     }
-
-    body {
-        font-size: 16px; /* Material Design base */
-    }
-
+    
     .scroll-top {
         width: 52px;
         height: 52px;
@@ -81,11 +210,41 @@
     }
 }
 
+
+@media (max-width: 575px) {
+    .header__top {
+        margin-bottom: 20px;
+    }
+
+    .hero__title {
+        font-size: 24px;
+    }
+    
+    .features__title, 
+    .products__title,
+    .newsletter__title {
+        font-size: 20px;
+    }
+}
+
+
 @media (max-width: 480px) {
+    .header {
+        padding: 15px 15px;
+    }
+
+    .hero__title {
+        font-size: 22px; 
+    }
+
+    .features__title {
+        font-size: 18px;
+    }
+
     body {
         font-size: 17px; /* HIG recommendation */
     }
-    
+
     .logo img {
         width: 100px;
         height: auto;
