@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avion - The furniture brand for the future</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <script src="./scripts/menu.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -13,13 +15,19 @@
 
             <img class="header__logo" src="assets/images/Лого.png" alt="Avion Logo">
 
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+
             <div class="header__actions">
                 <img class="header__icon" src="assets/icons/Shopping--cart.png" alt="Cart">
                 <img class="header__icon" src="assets/icons/User--avatar.png" alt="User">
             </div>
         </div>
         <div class="header__divider"></div>
-        <nav class="nav">
+        <nav class="nav" id="mainNav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="#ceramics">Plant pots</a></li>
                 <li class="nav__item"><a class="nav__link" href="#ceramics">Ceramics</a></li>
